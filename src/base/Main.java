@@ -6,15 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-  /*      Integer[] A = SortTools.createSequenceRand(8);
-        Arrays.stream(A).forEach(System.out::print);
-        System.out.println();
-        System.out.println(SortTools.Trade(A,0,A.length- 1));*/
-
-
-
-
-
         for (int var : new int[]{100, 1000, 10000, 100000, 200000}) { // Schleife über die einzelnen Arrays
 
             long avg_dec = 0; // counter für mittlere Zeit
@@ -25,7 +16,7 @@ public class Main {
             int loops = 10; // anzahl der durchläufe
 
 
-            for (int f = 0; f < 3; f++) {
+            for (int f = 0; f < 3; f++) { // Schleife um die verschiedenen Sortieralgorithmen auszuwählen
                 for (int i = 0; i < loops; i++) { // n-fache sortierung des arrays
 
                     var dec = SortTools.createSequenceDec(var); // Array erzeugen
@@ -63,6 +54,7 @@ public class Main {
                     avg_alt += t_stop_alt - t_start_alt;
                 }
 
+                System.out.printf("Sorting %d Elements\n", var);
                 String algo = (f == 0) ? "Insertion Sort" : (f == 1) ? "Merge Sort" : "Merge Sort (New)";
 
                 System.out.printf("Mean execution Time for %s (Decreasing): %d ns (%3.2e s)\n", algo, avg_dec / loops, (double) (avg_dec / loops) / 1000000000);
