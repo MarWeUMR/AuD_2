@@ -212,22 +212,4 @@ public class SortTools {
 
         merge(A, a, b, count_a, count_b, k);
     }
-
-    public static int Trade(Integer[] A, int p, int r) {
-        if (p == r ) {
-            return 0;
-        }
-        else {
-            int q = (p + r) / 2;
-            int t1 = Trade(A,p,q);
-            int t2 = Trade(A,q+1, r);
-            return maxWin(A,p,r,t1,t2);
-        }
-    }
-
-    private static int maxWin(Integer[]A, int p, int r, int t1, int t2) {
-        int dif = A[r] - A[p];
-        return Math.max(dif, Math.max(t1, t2));
-    }
-
 }
