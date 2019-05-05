@@ -89,7 +89,7 @@ public class SortTools {
 
     private static <T extends Comparable<T>> void merge(T[] A, T[] lRay, T[] rRay, int i, int j, int k) {
 
-        // separates "abarbeiten" der partiellen Arrays
+        // separates "abarbeiten" der partiellen Arrays (erster Durchlauf)
         while (i < lRay.length && j < rRay.length) {
 
             // wähle kleineres Element aus den beiden Arrays
@@ -102,6 +102,7 @@ public class SortTools {
 
         }
 
+        // 2. Durchlauf, aufüllen des übrigen Arrays
         while (i < lRay.length) {
             A[k++] = lRay[i++];
         }
@@ -184,6 +185,7 @@ public class SortTools {
             }
         }
 
+        // Platzhalter Variablen für die beiden Arrays, die noch zu bearbeiten sind
         T[] a;
         T[] b;
 
@@ -210,6 +212,7 @@ public class SortTools {
             count_b = j;
         }
 
+        // abschließend den rest auffüllen
         merge(A, a, b, count_a, count_b, k);
     }
 }

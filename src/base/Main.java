@@ -6,11 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Integer[] A = new Integer[]{1,3,2,10};
-
-        SortTools.Trade(A,0, A.length - 1);
-
-
         for (int var : new int[]{100, 1000, 10000, 100000, 200000}) { // Schleife über die einzelnen Arrays
 
             long avg_dec = 0; // counter für mittlere Zeit
