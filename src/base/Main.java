@@ -62,16 +62,114 @@ public class Main {
                 System.out.printf("Mean execution Time for %s (Random): %d ns (%3.1e s)\n", algo, avg_rand / loops, (double) (avg_rand / loops) / 1000000000);
                 System.out.printf("Mean execution Time for %s (Alternating): %d ns (%3.1e s)\n\n\n", algo, avg_alt / loops, (double) (avg_alt / loops) / 1000000000);
 
+
+
                 /*
-                 * Execution Time (Decreasing): 1392 ns; 61818 ns; 228182 ns; 16146550 ns;
-                 * 70437808 ns Execution Time (Increasing): 9940 ns; 18820 ns; 35580 ns; 181610
-                 * ns; 330860 ns; Execution Time (Random): 21250 ns; 254740 ns; 2194500 ns;
-                 * 112249550 ns; 460927470 ns; Execution Time (Alternating): 14420 ns; 143170
-                 * ns; 1066100 ns; 60333850 ns; 231798940 ns;
-                 */
+                Sorting 100 Elements
+                Mean execution Time for Insertion Sort (Decreasing): 126910 ns (1,27e-04 s)
+                Mean execution Time for Insertion Sort (Increasing): 5870 ns (5,9e-06 s)
+                Mean execution Time for Insertion Sort (Random): 59910 ns (6,0e-05 s)
+                Mean execution Time for Insertion Sort (Alternating): 32040 ns (3,2e-05 s)
+
+
+                Sorting 100 Elements
+                Mean execution Time for Merge Sort (Decreasing): 185150 ns (1,85e-04 s)
+                Mean execution Time for Merge Sort (Increasing): 51180 ns (5,1e-05 s)
+                Mean execution Time for Merge Sort (Random): 103250 ns (1,0e-04 s)
+                Mean execution Time for Merge Sort (Alternating): 70430 ns (7,0e-05 s)
+
+
+                Sorting 100 Elements
+                Mean execution Time for Merge Sort (New) (Decreasing): 230860 ns (2,31e-04 s)
+                Mean execution Time for Merge Sort (New) (Increasing): 86900 ns (8,7e-05 s)
+                Mean execution Time for Merge Sort (New) (Random): 154620 ns (1,5e-04 s)
+                Mean execution Time for Merge Sort (New) (Alternating): 117760 ns (1,2e-04 s)
+
+
+                Sorting 1000 Elements
+                Mean execution Time for Insertion Sort (Decreasing): 1025680 ns (1,03e-03 s)
+                Mean execution Time for Insertion Sort (Increasing): 11480 ns (1,1e-05 s)
+                Mean execution Time for Insertion Sort (Random): 508050 ns (5,1e-04 s)
+                Mean execution Time for Insertion Sort (Alternating): 251270 ns (2,5e-04 s)
+
+
+                Sorting 1000 Elements
+                Mean execution Time for Merge Sort (Decreasing): 1617060 ns (1,62e-03 s)
+                Mean execution Time for Merge Sort (Increasing): 566440 ns (5,7e-04 s)
+                Mean execution Time for Merge Sort (Random): 1164750 ns (1,2e-03 s)
+                Mean execution Time for Merge Sort (Alternating): 867010 ns (8,7e-04 s)
+
+
+                Sorting 1000 Elements
+                Mean execution Time for Merge Sort (New) (Decreasing): 2007960 ns (2,01e-03 s)
+                Mean execution Time for Merge Sort (New) (Increasing): 941790 ns (9,4e-04 s)
+                Mean execution Time for Merge Sort (New) (Random): 1576440 ns (1,6e-03 s)
+                Mean execution Time for Merge Sort (New) (Alternating): 1265370 ns (1,3e-03 s)
+
+
+                Sorting 10000 Elements
+                Mean execution Time for Insertion Sort (Decreasing): 54608360 ns (5,46e-02 s)
+                Mean execution Time for Insertion Sort (Increasing): 57890 ns (5,8e-05 s)
+                Mean execution Time for Insertion Sort (Random): 28888260 ns (2,9e-02 s)
+                Mean execution Time for Insertion Sort (Alternating): 15565480 ns (1,6e-02 s)
+
+
+                Sorting 10000 Elements
+                Mean execution Time for Merge Sort (Decreasing): 60207540 ns (6,02e-02 s)
+                Mean execution Time for Merge Sort (Increasing): 5335280 ns (5,3e-03 s)
+                Mean execution Time for Merge Sort (Random): 34981590 ns (3,5e-02 s)
+                Mean execution Time for Merge Sort (Alternating): 21287280 ns (2,1e-02 s)
+
+
+                Sorting 10000 Elements
+                Mean execution Time for Merge Sort (New) (Decreasing): 61910250 ns (6,19e-02 s)
+                Mean execution Time for Merge Sort (New) (Increasing): 7005050 ns (7,0e-03 s)
+                Mean execution Time for Merge Sort (New) (Random): 38066760 ns (3,8e-02 s)
+                Mean execution Time for Merge Sort (New) (Alternating): 23505830 ns (2,4e-02 s)
+
+
+                Sorting 100000 Elements
+                Mean execution Time for Insertion Sort (Decreasing): 6095520130 ns (6,10e+00 s)
+                Mean execution Time for Insertion Sort (Increasing): 597160 ns (6,0e-04 s)
+                Mean execution Time for Insertion Sort (Random): 4663074620 ns (4,7e+00 s)
+                Mean execution Time for Insertion Sort (Alternating): 1519490630 ns (1,5e+00 s)
+
+
+                Sorting 100000 Elements
+                Mean execution Time for Merge Sort (Decreasing): 6104771980 ns (6,10e+00 s)
+                Mean execution Time for Merge Sort (Increasing): 9928060 ns (9,9e-03 s)
+                Mean execution Time for Merge Sort (Random): 4680176660 ns (4,7e+00 s)
+                Mean execution Time for Merge Sort (Alternating): 1529204050 ns (1,5e+00 s)
+
+
+                Sorting 100000 Elements
+                Mean execution Time for Merge Sort (New) (Decreasing): 6111558120 ns (6,11e+00 s)
+                Mean execution Time for Merge Sort (New) (Increasing): 17114600 ns (1,7e-02 s)
+                Mean execution Time for Merge Sort (New) (Random): 4694345440 ns (4,7e+00 s)
+                Mean execution Time for Merge Sort (New) (Alternating): 1536887960 ns (1,5e+00 s)
+
+
+                Sorting 200000 Elements
+                Mean execution Time for Insertion Sort (Decreasing): 24176817130 ns (2,42e+01 s)
+                Mean execution Time for Insertion Sort (Increasing): 704870 ns (7,0e-04 s)
+                Mean execution Time for Insertion Sort (Random): 19108264180 ns (1,9e+01 s)
+                Mean execution Time for Insertion Sort (Alternating): 6012884600 ns (6,0e+00 s)
+
+
+                Sorting 200000 Elements
+                Mean execution Time for Merge Sort (Decreasing): 24196382130 ns (2,42e+01 s)
+                Mean execution Time for Merge Sort (Increasing): 18779080 ns (1,9e-02 s)
+                Mean execution Time for Merge Sort (Random): 19142222140 ns (1,9e+01 s)
+                Mean execution Time for Merge Sort (Alternating): 6031625230 ns (6,0e+00 s)
+
+
+                Sorting 200000 Elements
+                Mean execution Time for Merge Sort (New) (Decreasing): 24210280960 ns (2,42e+01 s)
+                Mean execution Time for Merge Sort (New) (Increasing): 33301740 ns (3,3e-02 s)
+                Mean execution Time for Merge Sort (New) (Random): 19171934120 ns (1,9e+01 s)
+                Mean execution Time for Merge Sort (New) (Alternating): 6047403030 ns (6,0e+00 s)
+                * */
             }
         }
-
-
     }
 }
